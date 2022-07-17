@@ -4,17 +4,45 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/index.min.css?_v=20220716133834" />
+  <link rel="stylesheet" href="styles/index.min.css?_v=20220717172306" />
   <title>Главная</title>
 </head>
 
   <body>
     <nav>
-  <div class="container">
-    <div class="logo">
-      <img src="./files/imgs/Logo3.svg" alt="logo" />
+  <div class="container nav-container">
+    <div class="top">
+      <div class="logo">
+        <img src="./files/imgs/Logo3.svg" alt="logo" />
+      </div>
+      <div class="burger-menu">
+        <img
+          class="img1"
+          src="./files/imgs/burger-menu.svg"
+          alt="burger-menu-open"
+        />
+        <img
+          class="img2"
+          src="./files/imgs/close.svg"
+          alt="burger-menu-close"
+        />
+      </div>
     </div>
-    <div class="burger-menu"></div>
+
+    <div class="middle">
+      <a href="">команда</a>
+      <a href="">проекты</a>
+      <a href="">контакты</a>
+    </div>
+    <div class="bottom">
+      <div class="links">
+        <a href=""><img src="./files/imgs/Facebook.svg" alt="" /></a>
+        <a href=""><img src="./files/imgs/Instagram.svg" alt="" /></a>
+        <a href=""><img src="./files/imgs/tg.svg" alt="" /></a>
+        <a href=""><img src="./files/imgs/vk.svg" alt="" /></a>
+      </div>
+      <a class="request">Оставьте заявку</a>
+    </div>
   </div>
 </nav>
 
@@ -142,8 +170,70 @@
   </div>
 </section>
  <section class="stack-drum pc">
-  <div class="drum"></div>
-  <div class="text"></div>
+  <div class="drum">
+    <div class="drum-text">
+      <span>наш <span style="color: #ff3535">stack:</span></span>
+    </div>
+    <div class="date-selector">
+      <div class="month" id="month1"></div>
+    </div>
+  </div>
+  <div class="text-block">
+    <div class="ios hidden">
+      <div class="row">
+        <span class="header">swift</span>
+        <span class="text"
+          >надёжный и интуитивно понятный язык программирования от Apple, при
+          помощи которого можно создавать приложения для всех iOS
+          устройств.</span
+        >
+      </div>
+      <div class="row">
+        <span class="header">flutter</span>
+        <span class="text"
+          >кроссплатформенное решение, благодаря которому можно написать один
+          код на две системы. Позволяет частично уменьшить затраты времени на
+          проектирование бизнес-логики и тестирование.</span
+        >
+      </div>
+    </div>
+    <div class="android hidden">
+      <div class="row">
+        <span class="header">Kotlin</span>
+        <span class="text"
+          >представляет современный, статически типизированный и один из самых
+          быстроразвивающихся языков программирования. Его используют для
+          создания мобильных приложений на Android, язык при помощи которого
+          можно создавать приложение на всех Android устройствах.
+        </span>
+      </div>
+      <div class="row">
+        <span class="header">flutter</span>
+        <span class="text"
+          >кроссплатформенное решение, благодаря которому можно написать один
+          код на две системы. Позволяет частично уменьшить затраты времени на
+          проектирование бизнес-логики и тестирование.</span
+        >
+      </div>
+    </div>
+    <div class="backend hidden">
+      <div class="row">
+        <span class="header">Node.js</span>
+        <span class="text"
+          >Node или Node.js — программная платформа, основанная на движке V8,
+          превращающая JavaScript из узкоспециализированного языка в язык общего
+          назначения.</span
+        >
+      </div>
+      <div class="row">
+        <span class="header">GO</span>
+        <span class="text"
+          >Go — компилируемый многопоточный язык программирования, разработанный
+          внутри компании Google.</span
+        >
+      </div>
+    </div>
+  </div>
 </section>
 <section class="stack-drum mobile">
   <div class="drum_and_text"></div>
@@ -191,20 +281,24 @@
     <footer>
   <div class="container">
     <div class="footer-links">
-      <a class="footer-links-text" href="">команда</a>
-      <a class="footer-links-text" href="">проекты</a>
-      <a class="footer-links-text" href="">контакты</a>
-      <a href=""><img src="./files/imgs/Facebook.svg" alt="" /></a>
-      <a href=""><img src="./files/imgs/Instagram.svg" alt="" /></a>
-      <a href=""><img src="./files/imgs/tg.svg" alt="" /></a>
-      <a href=""><img src="./files/imgs/vk.svg" alt="" /></a>
+      <div class="text-group">
+        <a class="footer-links-text" href="">команда</a>
+        <a class="footer-links-text" href="">проекты</a>
+        <a class="footer-links-text" href="">контакты</a>
+      </div>
+      <div class="img-group">
+        <a href=""><img src="./files/imgs/Facebook.svg" alt="" /></a>
+        <a href=""><img src="./files/imgs/Instagram.svg" alt="" /></a>
+        <a href=""><img src="./files/imgs/tg.svg" alt="" /></a>
+        <a href=""><img src="./files/imgs/vk.svg" alt="" /></a>
+      </div>
     </div>
     <div class="footer-text">
       <div class="row">
         <span>Контакты: +79934133007, onegoltd@gmail.com</span>
         <span style="color: #ffffff">Политика конфидиальности</span>
       </div>
-      <div class="row">
+      <div class="row row-2">
         <span
           >Реквизиты: ООО «Астра-М», РОССИЯ, РЕСП ТАТАРСТАН, Г КАЗАНЬ, УЛ
           ПАВЛЮХИНА, Д 102А, ПОМЕЩ. 2</span
@@ -216,5 +310,6 @@
 </footer>
 
   </body>
-  <script src="scripts/build.min.js?_v=20220716133834"></script>
+  <script src="scripts/build.min.js?_v=20220717172306"></script>
+  <script src="scripts/drum.js?_v=20220717172306"></script>
 </html>

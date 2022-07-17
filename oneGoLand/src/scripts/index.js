@@ -1,4 +1,3 @@
-import checkFunc from "./modules/test.js";
+import toggleMenu from "./modules/burger-menu.js";
 
-// console.log("hi");
-checkFunc();
+document.querySelector(".burger-menu").onclick = () => toggleMenu();
