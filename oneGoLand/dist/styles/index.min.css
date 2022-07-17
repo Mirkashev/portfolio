@@ -1,0 +1,436 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../files/fonts/BebasNeue Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: min(max(5px, 1.1111111111vw), 20px);
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: "Bebas Neue";
+}
+
+.container {
+  width: 66.6%;
+  margin: auto;
+  max-width: 1240px;
+}
+
+.red-arrow {
+  width: 2.6666666667vw;
+  max-width: 48px;
+  height: 2.6666666667vw;
+  max-height: 48px;
+}
+
+.pc {
+  display: flex !important;
+}
+
+.mobile {
+  display: none !important;
+}
+
+nav {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 5.5vw;
+  max-height: 100px;
+  background: rgba(8, 8, 8, 0.9);
+  backdrop-filter: blur(40px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  max-width: 115px;
+  padding-left: 40px;
+}
+nav .logo img {
+  width: 6.3888888889vw;
+  max-width: 115px;
+  height: 0.8888888889vw;
+  max-height: 16px;
+}
+
+main .about-regulations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 119vw;
+  max-height: 2300px;
+  margin-bottom: min(max(15px, 3.3333333333vw), 60px);
+}
+main .about-regulations .regulation-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(118.13deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.036) 100%), #0b0b0b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: min(max(15px, 3.3333333333vw), 60px);
+  margin-bottom: min(max(5px, 1.1111111111vw), 20px);
+}
+main .about-regulations .regulation-card .text {
+  z-index: 2;
+  width: 60%;
+  padding: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .about-regulations .regulation-card .text span {
+  font-size: min(max(20px, 4.4444444444vw), 80px);
+  text-align: left;
+}
+main .about-regulations .regulation-card .text .addition {
+  font-size: min(max(5px, 1.1111111111vw), 20px);
+  width: 65%;
+  margin-top: 15%;
+  color: rgba(255, 255, 255, 0.3);
+}
+main .about-regulations .regulation-card .text .send-request {
+  font-size: min(max(8px, 1.7777777778vw), 32px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .about-regulations .regulation-card .text-right {
+  position: absolute;
+  right: 0;
+}
+main .about-regulations .regulation-card .text-right span {
+  text-align: right;
+}
+main .about-regulations .regulation-card .text-right .addition {
+  align-self: flex-end;
+}
+main .about-regulations .regulation-card .card-bg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+main .about-regulations .regulation-card .card-bg img {
+  z-index: -1;
+  width: 72.5%;
+  height: 100%;
+}
+main .about-regulations .regulation-card .card-bg-left {
+  justify-content: flex-start;
+}
+main .about-text {
+  font-size: min(max(13px, 2.8888888889vw), 52px);
+  width: 90%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+main .about-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 23.8vw;
+  max-height: 458px;
+  margin-top: min(max(15px, 3.3333333333vw), 60px);
+  margin-bottom: min(max(5px, 1.1111111111vw), 20px);
+}
+main .about-links .link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 32.2%;
+  background: linear-gradient(118.13deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.036) 100%), #0b0b0b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: min(max(15px, 3.3333333333vw), 60px);
+  padding: 5% 5% 4% 5%;
+}
+main .about-links .link span {
+  font-size: min(max(8px, 1.7777777778vw), 32px);
+}
+main .about-links .link .link-tap {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  width: 100%;
+  padding-top: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .stack-drum {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30.5vw;
+  max-height: 586px;
+  margin-bottom: min(max(5px, 1.1111111111vw), 20px);
+}
+main .stack-drum .drum {
+  width: 45%;
+  background: linear-gradient(118.13deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.036) 100%), #0b0b0b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: min(max(15px, 3.3333333333vw), 60px);
+}
+main .stack-drum .text {
+  width: 53%;
+  background: linear-gradient(118.13deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.036) 100%), #0b0b0b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: min(max(15px, 3.3333333333vw), 60px);
+}
+main .stack-drum .drum_and_text {
+  width: 100%;
+  background: linear-gradient(118.13deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.036) 100%), #0b0b0b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  height: 203.7333333333vw;
+}
+main .form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 27.38vw;
+  max-height: 525px;
+  background: linear-gradient(118.13deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.036) 100%), #0b0b0b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: min(max(15px, 3.3333333333vw), 60px);
+  padding: 5%;
+}
+main .form .left-side {
+  display: flex;
+  flex-direction: column;
+}
+main .form .left-side span {
+  font-size: min(max(15.5px, 3.4444444444vw), 62px);
+}
+main .form .right-side {
+  width: 67.5%;
+}
+main .form .right-side .row1 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 5%;
+}
+main .form .right-side .row1 span {
+  font-size: min(max(15.5px, 3.4444444444vw), 62px);
+  color: rgba(255, 255, 255, 0.1);
+}
+main .form .right-side .row2 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+main .form .right-side .row2 span {
+  font-size: min(max(10.25px, 2.2777777778vw), 41px);
+}
+main .form .right-side .row3 {
+  padding-top: 7.5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .form .right-side .row3 span {
+  font-size: min(max(8px, 1.7777777778vw), 32px);
+}
+
+footer {
+  padding-top: min(max(15px, 3.3333333333vw), 60px);
+  padding-bottom: min(max(10px, 2.2222222222vw), 40px);
+  margin-top: min(max(15px, 3.3333333333vw), 60px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+footer .footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.5%;
+}
+footer .footer-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.4444444444vw;
+  max-width: 80px;
+  height: 4.4444444444vw;
+  max-height: 80px;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(118.13deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.036) 100%), #0b0b0b;
+  border: 0.666667px solid rgba(255, 255, 255, 0.06);
+  border-radius: min(max(15px, 3.3333333333vw), 60px);
+}
+footer .footer-links a img {
+  width: inherit;
+  max-width: inherit;
+  height: inherit;
+  max-height: inherit;
+}
+footer .footer-links .footer-links-text {
+  font-size: min(max(8px, 1.7777777778vw), 32px);
+  width: 14.5183333333vw;
+  max-width: 261.33px;
+  height: 4.4444444444vw;
+  max-height: 80px;
+}
+footer .footer-text {
+  width: 90%;
+  margin: auto;
+}
+footer .footer-text .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+footer .footer-text .row span {
+  font-size: min(max(5px, 1.1111111111vw), 20px);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 521px) {
+  .container {
+    width: 91.4666666667%;
+  }
+  .red-arrow {
+    height: 12.8vw;
+    width: 12.8vw;
+    max-width: none;
+    max-height: none;
+  }
+  .pc {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
+  nav {
+    height: 19.2vw;
+    max-height: 72px;
+  }
+  nav .logo {
+    padding-left: 0px;
+  }
+  nav .logo img {
+    width: 30.6666666667vw;
+    height: 4.2666666667vw;
+  }
+  main .about-regulations {
+    height: 554.6666666667vw;
+    max-height: none;
+  }
+  main .about-regulations .regulation-card {
+    border-radius: 10.6666666667vw;
+    margin-bottom: 3.2vw;
+    padding-top: 5.3333333333vw;
+  }
+  main .about-regulations .regulation-card .text {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  main .about-regulations .regulation-card .text span {
+    font-size: 13.8666666667vw;
+    text-align: center;
+  }
+  main .about-regulations .regulation-card .text .addition {
+    font-size: 5.3333333333vw;
+    width: 100%;
+    margin-top: 6.4%;
+  }
+  main .about-regulations .regulation-card .text .send-request {
+    font-size: 8.5333333333vw;
+    margin-top: 8.5333333333vw;
+    padding-top: 4.2666666667vw;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  main .about-regulations .regulation-card .text-right span {
+    text-align: center;
+  }
+  main .about-regulations .regulation-card .card-bg {
+    height: auto;
+    width: 100%;
+  }
+  main .about-regulations .regulation-card .card-bg img {
+    width: inherit;
+  }
+  main .about-text {
+    font-size: 9.6vw;
+    width: 92%;
+  }
+  main .about-links {
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+    margin-bottom: 0;
+  }
+  main .about-links .link {
+    border-radius: 10.6666666667vw;
+    margin-bottom: 4.8vw;
+    width: 100%;
+    padding: 14.3369175627% 11.4695340502% 11.4695340502% 11.4695340502%;
+  }
+  main .about-links .link span {
+    font-size: 8.5333333333vw;
+  }
+  main .about-links .link .link-tap {
+    padding-top: 8.5333333333vw;
+    margin-top: 13.3333333333vw;
+  }
+  main .stack-drum {
+    height: auto;
+    max-height: none;
+    margin-bottom: 3.2vw;
+  }
+  main .stack-drum .drum_and_text {
+    border-radius: 10.6666666667vw;
+  }
+  main .form {
+    height: auto;
+    max-height: none;
+    flex-direction: column;
+    border-radius: 10.6666666667vw;
+    padding: 8.5333333333vw;
+    padding-top: 10.6666666667vw;
+  }
+  main .form .left-side {
+    text-align: left;
+    width: 105%;
+  }
+  main .form .left-side span {
+    font-size: 12.8vw;
+  }
+  main .form .right-side {
+    width: 100%;
+  }
+  main .form .right-side .row1 {
+    padding-bottom: 10.6666666667vw;
+  }
+  main .form .right-side .row1 span {
+    font-size: 12.8vw;
+  }
+  main .form .right-side .row2 {
+    padding-bottom: 10.6666666667vw;
+    padding-top: 10.6666666667vw;
+  }
+  main .form .right-side .row2 span {
+    width: 95%;
+    font-size: 7.4666666667vw;
+  }
+  main .form .right-side .row3 {
+    justify-content: space-between;
+    padding-top: 8.5333333333vw;
+  }
+  main .form .right-side .row3 span {
+    font-size: 8.5333333333vw;
+  }
+}

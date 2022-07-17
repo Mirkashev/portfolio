@@ -1,0 +1,24 @@
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "Fact-Regular";
+  // адрес шрифта и тип
+  src: url("../files/fonts/Fact-Regular.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "Fact-Bold";
+  // адрес шрифта и тип
+  src: url("../files/fonts/Fact-CondensedExtraBold.woff2") format("truetype");
+  font-style: bold;
+  font-weight: bold;
+}
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "Fact-ExtraBold";
+  // адрес шрифта и тип
+  src: url("../files/fonts/Fact-Bold.woff2") format("truetype");
+  font-style: bold;
+  font-weight: bold;
+}

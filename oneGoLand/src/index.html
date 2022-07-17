@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title":"Главная" })
+  <body>
+    @@include('html/nav.html')
+
+    <div class="container">
+      <main>
+        @@include('html/regulations.html')
+        <span class="about-text"
+          >в команде OneGo собраны лучшие специалисты с опытом работы в
+          крупнейших компаниях России, странах Европы и США.<span
+            style="color: #ff3535; font-size: inherit"
+          >
+            это позволяет нам браться за самые смелые проекты, будь то стартап
+            или крупный бизнес-игрок.</span
+          ></span
+        >
+        @@include('html/links.html') @@include('html/drum.html')
+        @@include('html/form.html')
+      </main>
+    </div>
+    @@include('html/footer.html', {})
+  </body>
+  <script src="scripts/build.min.js"></script>
+</html>

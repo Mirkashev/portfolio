@@ -1,0 +1,417 @@
+body {
+  overflow: visible;
+  height: auto;
+}
+
+main {
+  .wrapper {
+    .content-wrapper {
+      .nav-top {
+        margin-top: 4vw;
+        .nav-left {
+          .logo {
+            span {
+              font-size: 4.2vw;
+            }
+            div {
+              .logo-img {
+                width: 5.6vw;
+                height: 6.4vw;
+              }
+              span {
+                font-size: 6.4vw;
+              }
+            }
+          }
+          .start-project {
+            display: none;
+          }
+        }
+        .nav-right {
+          .nav-button {
+            width: 12.8vw;
+            height: 5.8vw;
+          }
+        }
+        .logo {
+          line-height: 2vw;
+        }
+        .burger-panel {
+          .burger-panel-wrapper {
+            width: 100%;
+            .first-layer {
+              .second-layer {
+                .container {
+                  .content-top {
+                    .nav-button {
+                      width: 14vw;
+                      height: 8.75vw;
+                      margin-top: 4.5%;
+                    }
+                    .links-list {
+                      line-height: 16vw;
+                      span {
+                        font-size: 6.4vw;
+                      }
+                    }
+                  }
+                  .content-bottom {
+                    flex-direction: column-reverse;
+                    .company-name {
+                      span {
+                        font-size: 4.5vw;
+                      }
+                    }
+                    .white-button {
+                      width: 95%;
+                      height: 12.8vw;
+                      margin-bottom: 15%;
+                      justify-content: center;
+                      align-items: center;
+                      border-radius: 2vw;
+                      span {
+                        font-size: 6.4vw;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .global-section {
+        .sections {
+          flex-basis: 100%;
+          .first-section {
+            padding-top: 20.5%;
+            height: 60vh;
+            .o-grid {
+              .grid-1-13 {
+                grid-column-start: 1;
+                grid-column-end: 14;
+                h1 {
+                  font-size: 10.6vw;
+                  line-height: 14.4vw;
+                  .h1-word-lines {
+                    svg {
+                      right: -12.5%;
+                      width: 17%;
+                    }
+                  }
+                }
+              }
+            }
+            .about-profit-text {
+              span {
+                font-size: 3vw;
+              }
+              .text-side-left {
+                width: 47.5%;
+              }
+              .text-side-right {
+                width: 47.5%;
+                svg {
+                  display: none;
+                }
+              }
+            }
+          }
+          .second-section {
+            min-height: 0;
+            height: auto;
+            .paralax-container {
+              height: 40vw;
+              .vector-figure {
+                position: relative;
+                top: 45%;
+                overflow: visible;
+                height: inherit;
+                .vector-figure-wrap {
+                  top: -180%;
+                  position: absolute;
+                  width: inherit;
+                  height: 180vw;
+                  overflow: hidden;
+                  svg {
+                    position: absolute;
+                    width: 135%;
+                    height: 100%;
+                    top: 0;
+                    left: -20%;
+                  }
+                }
+              }
+            }
+            .about-company-text {
+              margin-top: 60vw;
+              .text-container {
+                font-size: 5vw;
+              }
+              .elastic-arrow-container {
+                // top: 62%;
+                right: 10%;
+                width: 12.5vw;
+                height: 7.9vw;
+                overflow: hidden;
+                .pc-arrow {
+                  display: block;
+                }
+                .mobile-arrow {
+                  display: none;
+                }
+              }
+            }
+            .second-variant {
+              .vector-figure {
+                top: -50%;
+              }
+              .projects-text {
+                margin-top: 70%;
+              }
+            }
+          }
+          .number-two {
+            margin-bottom: 110%;
+          }
+          .third-section {
+            height: auto;
+            margin-top: 30%;
+            .quiz {
+              position: relative;
+              height: 500vh;
+              .frame {
+                justify-content: space-between;
+                flex-direction: column;
+                position: sticky;
+                height: 100vh;
+                .physics-block {
+                  display: flex;
+                  flex-direction: column;
+                  position: relative;
+                  height: 55%;
+                  z-index: 12;
+                  .physics-block-progress-bar {
+                    // display: none;
+                    // transform: rotate(90deg);
+                    left: 0;
+                    position: relative;
+                    width: 100%;
+                    height: 4px;
+                    margin-top: 8%;
+                    // margin-bottom: 5%;
+                    overflow: hidden;
+                    .progress-bar-children {
+                      left: -50%;
+                      // transform: translate(-100%);
+
+                      bottom: 0;
+                    }
+                  }
+                  .pb-two {
+                    display: none;
+                    margin-top: 0%;
+                    top: 110%;
+                  }
+
+                  .physics-block-visuals {
+                    width: 100%;
+                    height: 70%;
+                    div {
+                      svg {
+                        position: relative;
+                      }
+                    }
+                  }
+                  .physics-block-visuals::before {
+                    top: 20%;
+                    height: 30%;
+                    display: none;
+                  }
+                }
+                .text-block {
+                  // width: 100%;
+                  opacity: 0;
+                  width: 80%;
+                  height: 30%;
+                  padding-top: 20%;
+                  // padding-top: 0;
+                  // transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 55%, 0);
+                  z-index: 10;
+                  // margin-bottom: 15%;
+                  transform: translate3d(0, 0, 0);
+                  .mobile-progress-bar {
+                    display: block;
+                    transition: opacity 0.3s linear;
+                    background-color: #c3c3c3;
+                    opacity: 0;
+                    overflow: hidden;
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    top: 45%;
+                    // top: 1;
+                    .mobile-progress-bar-children {
+                      position: absolute;
+                      width: 100%;
+                      height: 100%;
+                      background-color: #111111;
+                      left: -50%;
+                      bottom: 0;
+                    }
+                  }
+                  .page-counter {
+                    display: none;
+                  }
+                  .small-regular {
+                    font-size: 3vw;
+                  }
+                  .with-margin {
+                    margin-bottom: 12%;
+                  }
+                  .medium-regular {
+                    font-size: 6vw;
+                  }
+                  .client-get-var {
+                    svg {
+                      width: 4vw;
+                      height: 4vw;
+                      margin-right: 3vw;
+                    }
+                  }
+                }
+                .animation-dummy {
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+                  height: 40%;
+                  z-index: 11;
+                  background: #111111;
+                  display: none;
+                }
+              }
+              .active {
+                .text-block {
+                  opacity: 1;
+                  transform: translate3d(0, 0, 0);
+                  transition: opacity 0.3s cubic-bezier(0.38, 0.005, 0.215, 1),
+                    transform 0.6s cubic-bezier(0.38, 0.005, 0.215, 1);
+                  transform: translate3d(0, 0, 0);
+                }
+                .animation-dummy {
+                  display: block;
+                }
+              }
+              .visuals_active {
+                .text-block {
+                  .mobile-progress-bar {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+            .slider {
+              height: 425vh;
+              .frame {
+                flex-direction: column-reverse;
+                .text-block {
+                  justify-content: center;
+                  padding-top: 0;
+                  width: 100%;
+                  margin-bottom: 5%;
+                  .text-block-progress-bar {
+                    overflow: hidden;
+                    height: 2px;
+                    background-color: #c3c3c3;
+                    width: 100%;
+                    position: relative;
+                    margin-top: 10%;
+                    .progress-bar-children {
+                      background-color: #111111;
+                      height: 100%;
+                      width: 100%;
+                      position: absolute;
+                      left: -50%;
+                    }
+                  }
+                  .page-counter {
+                    display: none;
+                  }
+                }
+                .physics-block {
+                  justify-content: flex-start;
+                  .physics-block-visuals {
+                    margin-top: 20%;
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .nav-right {
+          display: none;
+        }
+        .form-full-screen {
+          .sections {
+            .contact-form-wrapper {
+              width: 100%;
+              overflow: hidden;
+              .contact-form {
+                width: 100%;
+                align-items: flex-start;
+                z-index: 20;
+                .contact-container {
+                  flex-direction: column;
+                  height: 100%;
+                  .form-text {
+                    flex-basis: 0;
+                    font-size: 12.8vw;
+                    margin-top: 15%;
+                  }
+                  .form-input-wrapper {
+                    flex-basis: 0;
+                    width: 100%;
+
+                    form {
+                      .input-form-global {
+                        .input-wrapper {
+                          input {
+                            font-size: 6.4vw;
+                            margin-bottom: 15%;
+                          }
+                        }
+                        span {
+                          font-size: 3vw;
+                          margin-top: -20%;
+                          margin-bottom: 15%;
+                        }
+                      }
+                      .form-button {
+                        width: 100%;
+                        height: 17.3vw;
+                        margin-bottom: 5%;
+                        font-size: 6.4vw;
+                        border-radius: 1.3vw;
+                      }
+                    }
+                    .thanks-for-mail {
+                      margin-bottom: 75%;
+                      span {
+                        font-size: 7vw;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
