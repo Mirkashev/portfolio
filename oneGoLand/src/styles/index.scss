@@ -464,9 +464,10 @@ main {
       .row {
         display: flex;
         flex-direction: column;
-        margin-bottom: setSizeOfProp(60);
+        margin-bottom: setSizeOfProp(40);
         .header {
           @include maxfont(41);
+          margin-bottom: setSizeOfProp(20);
           color: #ff3535;
         }
         .text {
@@ -475,6 +476,8 @@ main {
       }
     }
     .drum_and_text {
+      display: flex;
+      flex-direction: column;
       width: 100%;
       background: linear-gradient(
           118.13deg,
@@ -483,7 +486,66 @@ main {
         ),
         #0b0b0b;
       border: 1px solid rgba(255, 255, 255, 0.06);
-      height: calc(764 / 375 * 100vw);
+      min-height: calc(764 / 375 * 100vw);
+      padding: calc(20 / 375 * 100vw) calc(32 / 375 * 100vw);
+      .drum-mob {
+        display: flex;
+        height: calc(184 / 375 * 100vw);
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: calc(40 / 375 * 100vw);
+        span {
+          font-size: calc(48 / 375 * 100vw);
+        }
+      }
+      .date-selector2 {
+        cursor: pointer;
+        perspective: 2000px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        // @include maxWidth(246);
+        // @include maxHeight(224);
+        height: 100%;
+        // width: 50%;
+        flex-grow: 1;
+        > div {
+          flex: 1;
+        }
+
+        .select-wrap {
+          // @include maxfont(62);
+          .select-options {
+            .select-option {
+              font-size: calc(48 / 375 * 100vw);
+            }
+          }
+        }
+        .highlight {
+          // @include maxfont(62);
+          .highlight-list {
+            .highlight-item {
+              font-size: calc(48 / 375 * 100vw);
+            }
+          }
+        }
+      }
+      .text-block {
+        height: 75%;
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 0;
+        padding-top: calc(40 / 375 * 100vw);
+        .header {
+          font-size: calc(40 / 375 * 100vw);
+        }
+        .text {
+          font-size: calc(23 / 375 * 100vw);
+        }
+      }
     }
   }
   .form {

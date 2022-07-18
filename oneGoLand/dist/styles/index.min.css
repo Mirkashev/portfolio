@@ -792,20 +792,68 @@ main .stack-drum .text-block {
 main .stack-drum .text-block .row {
   display: flex;
   flex-direction: column;
-  margin-bottom: min(max(15px, 3.3333333333vw), 60px);
+  margin-bottom: min(max(10px, 2.2222222222vw), 40px);
 }
 main .stack-drum .text-block .row .header {
   font-size: min(max(10.25px, 2.2777777778vw), 41px);
+  margin-bottom: min(max(5px, 1.1111111111vw), 20px);
   color: #ff3535;
 }
 main .stack-drum .text-block .row .text {
   font-size: min(max(6.25px, 1.3888888889vw), 25px);
 }
 main .stack-drum .drum_and_text {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background: linear-gradient(118.13deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.036) 100%), #0b0b0b;
   border: 1px solid rgba(255, 255, 255, 0.06);
-  height: 203.7333333333vw;
+  min-height: 203.7333333333vw;
+  padding: 5.3333333333vw 8.5333333333vw;
+}
+main .stack-drum .drum_and_text .drum-mob {
+  display: flex;
+  height: 49.0666666667vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10.6666666667vw;
+}
+main .stack-drum .drum_and_text .drum-mob span {
+  font-size: 12.8vw;
+}
+main .stack-drum .drum_and_text .date-selector2 {
+  cursor: pointer;
+  perspective: 2000px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 100%;
+  flex-grow: 1;
+}
+main .stack-drum .drum_and_text .date-selector2 > div {
+  flex: 1;
+}
+main .stack-drum .drum_and_text .date-selector2 .select-wrap .select-options .select-option {
+  font-size: 12.8vw;
+}
+main .stack-drum .drum_and_text .date-selector2 .highlight .highlight-list .highlight-item {
+  font-size: 12.8vw;
+}
+main .stack-drum .drum_and_text .text-block {
+  height: 75%;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0;
+  padding-top: 10.6666666667vw;
+}
+main .stack-drum .drum_and_text .text-block .header {
+  font-size: 10.6666666667vw;
+}
+main .stack-drum .drum_and_text .text-block .text {
+  font-size: 6.1333333333vw;
 }
 main .form {
   display: flex;
