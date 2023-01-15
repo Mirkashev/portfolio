@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'URW Futura';
+    src: local('URW Futura Demi'), local('URW-Futura-Demi'),
+        url('Futura-Dem.woff2') format('woff2'),
+        url('Futura-Dem.woff') format('woff'),
+        url('Futura-Dem.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
