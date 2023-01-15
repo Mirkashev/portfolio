@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title":"Главная" })
+  <body>
+    @@include('html/nav.html')
+
+    <div class="container">
+      <main class="main">
+        <div class="main__header">
+          <div class="main__header__text">
+            <span
+              ><span style="color: #ff3535">Разработаем</span><br />
+              мобильное <br />
+              приложение</span
+            >
+            <a href="./form"
+              >оставьте заявку
+              <img src="./files/imgs/redArrow.svg" alt="right-arrow"
+            /></a>
+          </div>
+          <div class="main__header__img">
+            <img class="main-header-img hidden" alt="mobile-app" />
+            <div class="loader main-header-img-loader">
+              <div class="spin"></div>
+              <div class="bounce"></div>
+            </div>
+          </div>
+        </div>
+        @@include('html/slider.html') @@include('html/about.html')
+        <div class="main__business">
+          <div class="main__business__header">
+            <span
+              >из идеи с нуля <br />
+              в
+              <span style="color: #ff3535"
+                >доходный <br />
+                бизнес</span
+              >
+            </span>
+            <a href="./business"
+              >узнайте как
+              <img src="./files/imgs/redArrow.svg" alt="right-arrow"
+            /></a>
+          </div>
+          <div class="main__business__img">
+            <img class="main-business-img hidden" alt="business-example" />
+            <div class="loader main-business-img-loader">
+              <div class="spin"></div>
+              <div class="bounce"></div>
+            </div>
+          </div>
+        </div>
+        @@include('html/drum.html') @@include('html/form.html')
+      </main>
+    </div>
+    @@include('html/footer.html', {})
+  </body>
+  <script src="main/scripts/build.min.js"></script>
+  <!-- <script src="scripts/build.min.js"></script> -->
+</html>

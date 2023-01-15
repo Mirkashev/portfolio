@@ -1,0 +1,292 @@
+main {
+  .wrapper {
+    .content-wrapper {
+      .nav-top {
+        margin-top: 4vw;
+        .nav-left {
+          .logo {
+            span {
+              font-size: 4.2vw;
+            }
+            div {
+              .logo-img {
+                width: 5.6vw;
+                height: 6.4vw;
+              }
+              span {
+                font-size: 6.4vw;
+              }
+            }
+          }
+          .start-project {
+            display: none;
+          }
+        }
+        .nav-right {
+          .nav-button {
+            width: 12.8vw;
+            height: 5.8vw;
+          }
+        }
+        .logo {
+          line-height: 2vw;
+        }
+        .burger-panel {
+          .burger-panel-wrapper {
+            width: 100%;
+            .first-layer {
+              .second-layer {
+                .container {
+                  .content-top {
+                    .nav-button {
+                      width: 14vw;
+                      height: 8.75vw;
+                      margin-top: 4.5%;
+                    }
+                    .links-list {
+                      line-height: 16vw;
+                      span {
+                        font-size: 6.4vw;
+                      }
+                    }
+                  }
+                  .content-bottom {
+                    flex-direction: column-reverse;
+                    .company-name {
+                      span {
+                        font-size: 4.5vw;
+                      }
+                    }
+                    .white-button {
+                      width: 95%;
+                      height: 12.8vw;
+                      margin-bottom: 15%;
+                      justify-content: center;
+                      align-items: center;
+                      border-radius: 2vw;
+                      span {
+                        font-size: 6.4vw;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .global-section {
+        .sections {
+          flex-basis: 100%;
+          .first-section {
+            padding-top: 20.5%;
+            height: 50vh;
+            .o-grid {
+              .grid-1-13 {
+                grid-column-start: 1;
+                grid-column-end: 14;
+                h1 {
+                  font-size: 10.6vw;
+                  line-height: 14.4vw;
+                  .h1-word-lines {
+                    svg {
+                      right: -12.5%;
+                      width: 17%;
+                    }
+                  }
+                }
+              }
+            }
+            .about-profit-text {
+              .text-side-left {
+                width: 47.5%;
+              }
+              .text-side-right {
+                width: 47.5%;
+                svg {
+                  display: none;
+                }
+              }
+            }
+          }
+          .second-section {
+            .paralax-container {
+              height: 40vw;
+              margin-top: 15vw;
+              .vector-figure {
+                position: relative;
+                top: 0;
+                overflow: visible;
+                height: inherit;
+                .vector-figure-wrap {
+                  top: -180%;
+                  position: absolute;
+                  width: inherit;
+                  height: 180vw;
+                }
+              }
+            }
+            .about-company-text {
+              margin-top: 60vw;
+              .text-container {
+                font-size: 6.4vw;
+              }
+              .elastic-arrow-container {
+                top: 60%;
+                right: 2%;
+                width: 16.5vw;
+                height: 17.9vw;
+                overflow: hidden;
+              }
+              .pc-arrow {
+                display: none !important;
+              }
+              .mobile-arrow {
+                display: block !important;
+                top: 30% !important;
+              }
+            }
+            .second-variant {
+              .vector-figure {
+                top: -105%;
+              }
+              .projects-text {
+                margin-top: 15%;
+              }
+            }
+          }
+          .number-two {
+            margin-bottom: 35%;
+          }
+          .third-section {
+            height: auto;
+            margin-top: 30%;
+            .quiz {
+              position: relative;
+              height: 500vh;
+              .frame {
+                justify-content: space-between;
+                position: sticky;
+                height: 100vh;
+                .physics-block {
+                  .physics-block-visuals {
+                    div {
+                      svg {
+                        position: relative;
+                      }
+                    }
+                  }
+                  .physics-block-visuals::before {
+                    top: 20%;
+                    height: 30%;
+                    display: none;
+                  }
+                }
+                .text-block {
+                  width: 100%;
+                  opacity: 0;
+                  // padding-top: 0;
+                  // transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                  z-index: 10;
+                  margin-bottom: 15%;
+                  .small-regular {
+                    font-size: 4.26vw;
+                  }
+                  .with-margin {
+                    margin-bottom: 12%;
+                  }
+                  .medium-regular {
+                    font-size: 8vw;
+                  }
+                  .client-get-var {
+                    svg {
+                      width: 5vw;
+                      height: 5vw;
+                      margin-right: 3vw;
+                    }
+                  }
+                }
+              }
+              .active {
+                .text-block {
+                  opacity: 1;
+                  transform: translate3d(0, 0, 0);
+                  transition: opacity 0.3s cubic-bezier(0.38, 0.005, 0.215, 1),
+                    transform 0.6s cubic-bezier(0.38, 0.005, 0.215, 1);
+                  transform: translate3d(0, 0, 0);
+                }
+              }
+            }
+            .slider {
+              height: 375vh;
+              .frame {
+                .text-block {
+                  justify-content: center;
+                }
+              }
+            }
+          }
+        }
+
+        .nav-right {
+          display: none;
+        }
+        .form-full-screen {
+          .sections {
+            .contact-form-wrapper {
+              width: 100%;
+              overflow: hidden;
+              .contact-form {
+                width: 100%;
+                align-items: flex-start;
+                .contact-container {
+                  flex-direction: column;
+                  height: 100%;
+                  .form-text {
+                    flex-basis: 0;
+                    font-size: 12.8vw;
+                    margin-top: 15%;
+                  }
+                  .form-input-wrapper {
+                    flex-basis: 0;
+                    width: 100%;
+
+                    form {
+                      .input-form-global {
+                        .input-wrapper {
+                          input {
+                            font-size: 6.4vw;
+                            margin-bottom: 35%;
+                          }
+                        }
+                        span {
+                          font-size: 3vw;
+                          margin-top: -20%;
+                          margin-bottom: 15%;
+                        }
+                      }
+                      .form-button {
+                        width: 100%;
+                        height: 17.3vw;
+                        margin-bottom: 5%;
+                        font-size: 6.4vw;
+                        border-radius: 1.3vw;
+                      }
+                    }
+                    .thanks-for-mail {
+                      margin-bottom: 75%;
+                      span {
+                        font-size: 7vw;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

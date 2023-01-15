@@ -1,0 +1,160 @@
+main {
+  flex-grow: 1;
+  .form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(640 / 1800 * 100vw);
+    max-height: 640px;
+    background: linear-gradient(
+        118.13deg,
+        rgba(255, 255, 255, 0.06) 0%,
+        rgba(255, 255, 255, 0.036) 100%
+      ),
+      #0b0b0b;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    @include maxBorder(60);
+    margin-top: setSizeOfProp(150);
+
+    padding: 5%;
+    .left-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+      span {
+        @include maxfont(80);
+      }
+      .form-advice {
+        @include maxfont(32);
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+    .right-side {
+      width: 58%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      input {
+        color: rgba(255, 255, 255, 0.3);
+        @include maxBorder(40);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: linear-gradient(
+            118.13deg,
+            rgba(255, 255, 255, 0.06) 0%,
+            rgba(255, 255, 255, 0.036) 100%
+          ),
+          #0b0b0b;
+        padding: 3.5% 3.75%;
+        @include maxHeight(80);
+        font-family: 'Bebas Neue';
+        margin-bottom: calc(20 / 1800 * 100%);
+        @include maxfont(32);
+      }
+      input:focus {
+        border: 1px solid #ffffff;
+      }
+      .active {
+        border: 1px solid #ffffff;
+        color: #ffffff;
+      }
+      .validation-error {
+        border: 1px solid #ff3535;
+      }
+      .validation-error::placeholder {
+        color: #ff3535;
+      }
+      textarea {
+        overflow: hidden;
+        @include maxBorder(30);
+        color: rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: linear-gradient(
+            118.13deg,
+            rgba(255, 255, 255, 0.06) 0%,
+            rgba(255, 255, 255, 0.036) 100%
+          ),
+          #0b0b0b;
+        padding: 3.5% 3.75%;
+        @include maxHeight(184);
+        font-family: 'Bebas Neue';
+        resize: none;
+        // margin-bottom: calc(56 / 1800 * 100%);
+        @include maxfont(32);
+      }
+      .form-textarea-counter {
+        color: rgba(255, 255, 255, 0.3);
+        @include maxfont(20);
+        text-align: right;
+        margin-right: calc(20 / 624 * 100%);
+      }
+      button {
+        background: rgba(255, 255, 255, 0.1);
+        @include maxBorder(40);
+        border: none;
+        color: rgba(255, 255, 255, 0.3);
+        @include maxHeight(80);
+        @include maxfont(32);
+      }
+      .form-button-active {
+        background: #ff3535;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media (max-width: 521px) {
+  main {
+    .form {
+      height: auto;
+      max-height: none;
+      flex-direction: column;
+      border-radius: calc(40 / 375 * 100vw);
+      padding: calc(16 / 375 * 100vw);
+      padding-top: calc(40 / 375 * 100vw);
+      margin-bottom: calc(40 / 375 * 100vw);
+      margin-top: calc(100 / 375 * 100vw);
+      .left-side {
+        text-align: center;
+        width: 100%;
+        margin-bottom: calc(24 / 375 * 100vw);
+        span {
+          font-size: calc(48 / 375 * 100vw);
+        }
+      }
+      .right-side {
+        width: 100%;
+        input {
+          border-radius: calc(40 / 375 * 100vw);
+          font-size: calc(20 / 375 * 100vw);
+          padding: 9.375%;
+          height: calc(64 / 375 * 100vw);
+          margin-bottom: calc(12 / 375 * 100vw);
+        }
+        .form-textarea {
+          font-size: calc(20 / 375 * 100vw);
+          padding: 9.375%;
+
+          height: calc(180 / 375 * 100vw);
+          border-radius: calc(30 / 375 * 100vw);
+          // margin-bottom: calc(60 / 375 * 100vw);
+        }
+        .form-textarea-counter {
+          font-size: calc(20 / 375 * 100vw);
+          margin-bottom: calc(24 / 375 * 100vw);
+          margin-top: calc(12 / 375 * 100vw);
+          margin-right: calc(20 / 375 * 100vw);
+        }
+        button {
+          font-size: calc(32 / 375 * 100vw);
+          height: calc(80 / 375 * 100vw);
+          border-radius: calc(40 / 375 * 100vw);
+        }
+      }
+    }
+  }
+}
